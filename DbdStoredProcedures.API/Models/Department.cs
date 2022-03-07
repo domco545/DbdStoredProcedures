@@ -17,6 +17,14 @@ public class Department
         EmpCount = empCount;
     }
 
+    public Department(string dName, int dNumber, int mgrSsn, DateTime mgrStartDate)
+    {
+        DName = dName;
+        DNumber = dNumber;
+        MgrSSN = mgrSsn;
+        MgrStartDate = mgrStartDate;
+    }
+
     public Department(string dName, int mgrSsn)
     {
         DName = dName;
