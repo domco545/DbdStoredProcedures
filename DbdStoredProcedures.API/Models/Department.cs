@@ -17,12 +17,13 @@ public class Department
         EmpCount = empCount;
     }
 
-    public Department(string dName, int dNumber, int mgrSsn, DateTime mgrStartDate)
+    public Department(string dName, int dNumber, decimal mgrSsn, DateTime mgrStartDate, int empCount)
     {
         DName = dName;
         DNumber = dNumber;
-        MgrSSN = mgrSsn;
+        MgrSSN = decimal.ToInt32(mgrSsn);
         MgrStartDate = mgrStartDate;
+        EmpCount = empCount;
     }
 
     public Department(string dName, int mgrSsn)
